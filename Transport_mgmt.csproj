@@ -1,0 +1,1042 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D08A9B24-3636-4991-B41F-12C9C68A8D39}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Transport_mgmt</RootNamespace>
+    <AssemblyName>Transport_mgmt</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_Billing_Detail_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Billing_Detail_Form.Designer.cs">
+      <DependentUpon>Add_Billing_Detail_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Bill_Payment_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Bill_Payment_Entry.Designer.cs">
+      <DependentUpon>Add_Bill_Payment_Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Employees.Designer.cs">
+      <DependentUpon>Add_Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Emp_Daily_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Emp_Daily_Entry.Designer.cs">
+      <DependentUpon>Add_Emp_Daily_Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Salary_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Salary_Details.Designer.cs">
+      <DependentUpon>Add_Salary_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Vehicle_Maintenance_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Vehicle_Maintenance_Detail.Designer.cs">
+      <DependentUpon>Add_Vehicle_Maintenance_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Voucher_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Voucher_Entry.Designer.cs">
+      <DependentUpon>Add_Voucher_Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_Biling_Detail_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_Biling_Detail_Form.Designer.cs">
+      <DependentUpon>Delete_Biling_Detail_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_Bill_Payment_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_Bill_Payment_Entry.Designer.cs">
+      <DependentUpon>Delete_Bill_Payment_Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_Employees_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_Employees_Details.Designer.cs">
+      <DependentUpon>Delete_Employees_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_Party_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_Party_Details.Designer.cs">
+      <DependentUpon>Delete_Party_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_Salary_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_Salary_Details.Designer.cs">
+      <DependentUpon>Delete_Salary_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_Vehicle_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_Vehicle_Details.Designer.cs">
+      <DependentUpon>Delete_Vehicle_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_Vehicle_Daily_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_Vehicle_Daily_Entry.Designer.cs">
+      <DependentUpon>Delete_Vehicle_Daily_Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_Vehicle_Maintenance_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_Vehicle_Maintenance_Details.Designer.cs">
+      <DependentUpon>Delete_Vehicle_Maintenance_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_Vehicle_Paper_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_Vehicle_Paper_Details.Designer.cs">
+      <DependentUpon>Delete_Vehicle_Paper_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_Voucher_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_Voucher_Entry.Designer.cs">
+      <DependentUpon>Delete_Voucher_Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet26.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet26.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet27.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet27.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet28.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet28.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet29.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet29.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet30.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet30.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet32.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet32.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Billing_Detail_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Billing_Detail_Form.Designer.cs">
+      <DependentUpon>Update_Billing_Detail_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Bill_Payment_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Bill_Payment_Entry.Designer.cs">
+      <DependentUpon>Update_Bill_Payment_Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Emp_Daily_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Emp_Daily_Entry.Designer.cs">
+      <DependentUpon>Update_Emp_Daily_Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Salary_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Salary_Details.Designer.cs">
+      <DependentUpon>Update_Salary_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Vehicle_Daily_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Vehicle_Daily_Entry.Designer.cs">
+      <DependentUpon>Update_Vehicle_Daily_Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Vehicle_Maintenance_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Vehicle_Maintenance_Detail.Designer.cs">
+      <DependentUpon>Update_Vehicle_Maintenance_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Vehicle_Paper_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Vehicle_Paper_Detail.Designer.cs">
+      <DependentUpon>Update_Vehicle_Paper_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Voucher_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Voucher_Entry.Designer.cs">
+      <DependentUpon>Update_Voucher_Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Vehicle_Daily_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Vehicle_Daily_Entry.Designer.cs">
+      <DependentUpon>Add_Vehicle_Daily_Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Vehicle_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Vehicle_Details.Designer.cs">
+      <DependentUpon>Add_Vehicle_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Party.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Party.Designer.cs">
+      <DependentUpon>Update_Party.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Party_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Party_Details.Designer.cs">
+      <DependentUpon>Add_Party_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Vehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Vehicle.Designer.cs">
+      <DependentUpon>Update_Vehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update__Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update__Employees.Designer.cs">
+      <DependentUpon>Update__Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transport_Management.Designer.cs">
+      <DependentUpon>Transport_Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_Mgmt_SystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Transport_Mgmt_SystemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Vehicle_Paper_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Vehicle_Paper_Detail.Designer.cs">
+      <DependentUpon>Add_Vehicle_Paper_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Billing_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Billing_Details.Designer.cs">
+      <DependentUpon>View_Billing_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Bill_Payment_Entries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Bill_Payment_Entries.Designer.cs">
+      <DependentUpon>View_Bill_Payment_Entries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Employees_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Employees_Details.Designer.cs">
+      <DependentUpon>View_Employees_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Party_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Party_Details.Designer.cs">
+      <DependentUpon>View_Party_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Salary_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Salary_Details.Designer.cs">
+      <DependentUpon>View_Salary_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Vehicle_Daily_Entry_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Vehicle_Daily_Entry_Details.Designer.cs">
+      <DependentUpon>View_Vehicle_Daily_Entry_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Vehicle_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Vehicle_Details.Designer.cs">
+      <DependentUpon>View_Vehicle_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Vehicle_Maintenance_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Vehicle_Maintenance_Details.Designer.cs">
+      <DependentUpon>View_Vehicle_Maintenance_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Vehicle_Paper_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Vehicle_Paper_Details.Designer.cs">
+      <DependentUpon>View_Vehicle_Paper_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Voucher_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Voucher_Details.Designer.cs">
+      <DependentUpon>View_Voucher_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WELCOME.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WELCOME.Designer.cs">
+      <DependentUpon>WELCOME.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_Billing_Detail_Form.resx">
+      <DependentUpon>Add_Billing_Detail_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Bill_Payment_Entry.resx">
+      <DependentUpon>Add_Bill_Payment_Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Employees.resx">
+      <DependentUpon>Add_Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Emp_Daily_Entry.resx">
+      <DependentUpon>Add_Emp_Daily_Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Salary_Details.resx">
+      <DependentUpon>Add_Salary_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Vehicle_Daily_Entry.resx">
+      <DependentUpon>Add_Vehicle_Daily_Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Vehicle_Details.resx">
+      <DependentUpon>Add_Vehicle_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Vehicle_Maintenance_Detail.resx">
+      <DependentUpon>Add_Vehicle_Maintenance_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Voucher_Entry.resx">
+      <DependentUpon>Add_Voucher_Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_Biling_Detail_Form.resx">
+      <DependentUpon>Delete_Biling_Detail_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_Bill_Payment_Entry.resx">
+      <DependentUpon>Delete_Bill_Payment_Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_Employees_Details.resx">
+      <DependentUpon>Delete_Employees_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_Party_Details.resx">
+      <DependentUpon>Delete_Party_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_Salary_Details.resx">
+      <DependentUpon>Delete_Salary_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_Vehicle_Daily_Entry.resx">
+      <DependentUpon>Delete_Vehicle_Daily_Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_Vehicle_Details.resx">
+      <DependentUpon>Delete_Vehicle_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_Vehicle_Maintenance_Details.resx">
+      <DependentUpon>Delete_Vehicle_Maintenance_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_Vehicle_Paper_Details.resx">
+      <DependentUpon>Delete_Vehicle_Paper_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_Voucher_Entry.resx">
+      <DependentUpon>Delete_Voucher_Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Emp_Daily_Entry.resx">
+      <DependentUpon>Update_Emp_Daily_Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Salary_Details.resx">
+      <DependentUpon>Update_Salary_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Voucher_Entry.resx">
+      <DependentUpon>Update_Voucher_Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Vehicle_Paper_Detail.resx">
+      <DependentUpon>Update_Vehicle_Paper_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Vehicle_Maintenance_Detail.resx">
+      <DependentUpon>Update_Vehicle_Maintenance_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Billing_Detail_Form.resx">
+      <DependentUpon>Update_Billing_Detail_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Bill_Payment_Entry.resx">
+      <DependentUpon>Update_Bill_Payment_Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Party.resx">
+      <DependentUpon>Update_Party.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Party_Details.resx">
+      <DependentUpon>Add_Party_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Vehicle.resx">
+      <DependentUpon>Update_Vehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update__Employees.resx">
+      <DependentUpon>Update__Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transport_Management.resx">
+      <DependentUpon>Transport_Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Vehicle_Paper_Detail.resx">
+      <DependentUpon>Add_Vehicle_Paper_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Vehicle_Daily_Entry.resx">
+      <DependentUpon>Update_Vehicle_Daily_Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Billing_Details.resx">
+      <DependentUpon>View_Billing_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Bill_Payment_Entries.resx">
+      <DependentUpon>View_Bill_Payment_Entries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Employees_Details.resx">
+      <DependentUpon>View_Employees_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Party_Details.resx">
+      <DependentUpon>View_Party_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Salary_Details.resx">
+      <DependentUpon>View_Salary_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Vehicle_Daily_Entry_Details.resx">
+      <DependentUpon>View_Vehicle_Daily_Entry_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Vehicle_Details.resx">
+      <DependentUpon>View_Vehicle_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Vehicle_Maintenance_Details.resx">
+      <DependentUpon>View_Vehicle_Maintenance_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Vehicle_Paper_Details.resx">
+      <DependentUpon>View_Vehicle_Paper_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Voucher_Details.resx">
+      <DependentUpon>View_Voucher_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WELCOME.resx">
+      <DependentUpon>WELCOME.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Transport_Mgmt_SystemDataSet.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet1.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet1.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet10.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet10.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet11.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet11.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet12.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet12.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet13.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet13.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet14.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet14.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet15.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet15.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet16.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet16.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet17.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet17.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet18.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet18.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet19.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet19.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet2.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet2.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet20.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet20.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet21.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet21.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet22.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet22.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet23.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet23.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet24.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet24.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet25.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet25.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet26.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet26.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet26.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet27.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet27.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet27.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet27.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet28.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet28.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet28.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet28.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet29.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet29.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet29.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet29.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet3.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet3.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet30.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet30.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet30.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet30.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet31.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet31.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet32.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet32.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet32.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet32.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet4.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet4.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet5.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet5.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet6.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet6.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet7.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet7.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet8.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet8.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet9.xsc">
+      <DependentUpon>Transport_Mgmt_SystemDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Transport_Mgmt_SystemDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Transport_Mgmt_SystemDataSet9.xss">
+      <DependentUpon>Transport_Mgmt_SystemDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\truck-icon-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\container-truck-6821479.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\truck-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\road-ecw-logistics-verkleind.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_img.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transport-management-system-500x500.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
